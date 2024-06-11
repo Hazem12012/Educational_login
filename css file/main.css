@@ -22,7 +22,7 @@ body{
 }
 .section .items{
   width: 100% ;
-  margin: 0px auto;
+  margin: 0px 100px;
   max-width: 1250px;
   height: fit-content;
   display: grid;
@@ -33,7 +33,7 @@ body{
 .section .items .item{
     width: 100%;
     height: fit-content;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .section .items .item .image{
   max-width: 240p;
@@ -54,14 +54,14 @@ height: fit-content;
 box-shadow:0px 2px  4px #aaaa;
 display: flex;
 flex-direction: column;
-gap: 1rem;
+/* gap: 1rem; */
 }
 .section .card .logo-link{
   position: relative;
   padding: 0.5rem 0rem;
 }
 .section .card .logo-link img{
-  background-color: rgb(27, 64, 76);
+  background-color: #1b4755;
   margin: 5px;
   padding: 10px;
   border-radius:  10px 30px ;
@@ -72,15 +72,22 @@ gap: 1rem;
 font-size: 28px;
 line-height: 28px;
 font-weight: 500;
-color: red;
 padding: 0.5rem 0rem;
-}
+color: #000;
+margin-top: 0px;
+margin-bottom: 15px;
 
+}
+.section .card .title h1  {
+  font-size: 30px;
+    padding: 10px 0;
+    color:#111;
+}
 .section .card .title .para{
 font-size: 14px;
 line-height: 14px;
 font-weight: 400;
-color: #111;
+color: #494848;
 padding: 0px;
 }
 .section .card .title .para a{
@@ -90,3 +97,140 @@ padding: 0px;
   color: #0f6b96;
   padding: 0px;
 }
+.section .card .title .para a:hover{
+  text-decoration: underline;
+}
+.section .card .items_2{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+gap: 1rem;
+margin-bottom: 5px;
+}
+.section .card .items_2 .col{
+  display: flex;
+  flex-direction: column;
+}
+.section .card .items_2 .col input{
+font-size: 14px;
+line-height: 14px;
+font-weight: 500;
+color: #000;
+border: 1px solid #aaa;
+border-radius: 0.33rem;
+outline: navajowhite;
+background-color: #fff;
+transition: all 1s;
+width: 100%;
+height: 30px;
+padding: 10px;
+}
+.section .card .items_2 .col label{
+  font-weight: 500;
+  font-size: 15px;
+color: #111;
+margin-bottom: 5px;
+text-transform: capitalize;
+}
+.section .card .or{
+  padding: 0.5rem 0rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+ .or_col{
+width: calc(50% - 30px );
+height: 1px;
+background-color: #777;
+}
+ .or_text{
+  padding: 0rem 1rem;
+  color: #444;
+  font-size: 14px;
+}
+.other_ways {
+  margin:10px 0;
+}
+.other_ways span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 500;
+  gap: 15px;
+}
+.other_ways .way{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: solid 1px #aaa;
+  cursor: pointer;
+  border-radius: 0.33rem;
+  transition: .3s;
+}
+  .other_ways .way:hover{
+  background-color: #aaa;
+}
+.tools{
+  margin-top: 35px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.tools .line{
+  display: flex ;
+}
+.tools .line .col input{
+margin-right:5px ;
+}
+.tools .forgot{
+color: #0f6b96;
+}
+.tools .forgot:hover{
+  text-decoration: underline;
+}
+.btn_form{
+  transition: 0.3s;
+  anchor-name: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 0.33rem;
+  border: 1px solid #0f6b96;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffff;
+  background-color: #0f6b96;
+}
+.btn_form:hover{
+  background-color: #fff;
+  color: #3a3939;
+}
+
+/* img style */
+.item .image img{
+  position: relative;
+animation: up-and-down 5s linear infinite;
+transition: 0.3s;
+}
+.item .image img:hover{
+  transform: rotateY(20deg);
+}
+@keyframes up-and-down{
+  0%,100%{
+    top:0px;
+    }
+  50%{
+    top: -50px;
+  }
+}
+
